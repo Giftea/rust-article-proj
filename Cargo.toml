@@ -1,12 +1,16 @@
 [package]
-name = "project3"
+name = "clinewsapp"
 version = "0.1.0"
 edition = "2021"
+
+description = "A simple cli news render app"
+license = "MIT"
+authors = ["giftea"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ureq = "2.4.0"
-serde_json = "1.0.81"
-serde = {version = "1.0.137", features = ["derive"]}
-colour = "0.6.0"
+newsapi = {path = "./newsapi"}
+dotenv = "0.15.0"
+termimad = "0.20.2"
+crossterm = "0.23.2"
